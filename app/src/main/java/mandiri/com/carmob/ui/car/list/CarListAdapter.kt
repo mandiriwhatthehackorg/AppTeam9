@@ -43,8 +43,9 @@ class CarListAdapter : RecyclerView.Adapter<CarListAdapter.ViewHolder>() {
     }
 
     fun setData(carList: MutableList<Cars.ListCar>) {
+        this.listCar.clear()
         this.listCar.addAll(carList)
-        notifyItemInserted(carList.size - 1)
+        notifyDataSetChanged()
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {

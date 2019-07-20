@@ -34,8 +34,9 @@ class CarFavoriteListAdapter : RecyclerView.Adapter<CarFavoriteListAdapter.ViewH
     }
 
     fun setData(carList: MutableList<Cars.ListCar>) {
+        this.listCar.clear()
         this.listCar.addAll(carList)
-        notifyItemInserted(carList.size - 1)
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
