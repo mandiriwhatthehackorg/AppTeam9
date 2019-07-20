@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#EFEFEF"
+        tools:context=".ui.order.OrderFinalActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#EFEFEF"
+                  android:orientation="vertical">
+
+        <include layout="@layout/layout_toolbar_no_icon"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorWhite"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/core_dimen_size_24dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                      android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                      android:text="Pesanan Anda"/>
+            <!--Pesanan-->
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                    android:layout_marginTop="@dimen/core_dimen_size_12dp">
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/cvUserImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="@dimen/core_dimen_size_8dp"
+                        android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                        android:layout_marginRight="@dimen/core_dimen_size_16dp">
+
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/car_example"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                        android:id="@+id/llReview"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="@dimen/core_dimen_size_12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                        android:layout_toRightOf="@id/cvUserImage"
+                        android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:text="Review"/>
+
+                    <RatingBar
+                            android:id="@+id/rbCarRating"
+                            style = "?android:attr/ratingBarStyleSmall"
+                            android:theme="@style/RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="4"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Totok Dealer"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:layout_marginTop="@dimen/core_dimen_size_20dp"
+                                  android:orientation="horizontal">
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_weight="1"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginRight="@dimen/core_dimen_size_8dp"
+                                      android:text="Quantity :"/>
+
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textStyle="bold"
+                                      android:text="1"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_weight="1"
+                                      android:gravity="end"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal">
+
+                            <TextView android:id="@+id/tvCarPrice"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textColor="@color/colorBlue"
+                                      android:text="Rp.5,1 M"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--end pesanan-->
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorWhite"
+                      android:orientation="vertical"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Detail Pembayaran"
+                      android:textColor="@color/colorGrey"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Nama Lengkap"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Wahyu Andrianto"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textColor="@color/colorBlue"
+                      android:textStyle="bold"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Tempat Tinggal"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Jalan. M. H Tamrin"
+                      android:textColor="@color/colorBlue"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textStyle="bold"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Metode Pembayaran"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Kredit"
+                      android:id="@+id/kreditType"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textColor="@color/colorBlue"
+                      android:textStyle="bold"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Bank"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mandiri"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textColor="@color/colorBlue"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Simulasi Kredit"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="DP Murah"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textColor="@color/colorBlue"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Hasil Simulasi"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:text="Tenor : 12 Bulan \nTotal DP. : 508.912.000 \nAngsuran. : 97.032.000"
+                      android:textColor="@color/colorBlue"
+                      android:textStyle="bold"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Ingin mencoba dulu ?"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:textSize="@dimen/core_dimen_size_12dp"
+                      android:textColor="@color/colorGreyTitle"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:textStyle="bold"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkTestDrive"
+                        android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                        android:layout_width="@dimen/core_dimen_size_24dp"
+                        android:layout_height="@dimen/core_dimen_size_24dp"
+                        android:layout_marginRight="@dimen/core_dimen_size_8dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Test Drive"
+                          android:textColor="@color/colorBlue"
+                          android:textStyle="bold"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/testDriveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/core_dimen_size_8dp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_4dp"
+                      android:text="Set Tanggal dan Waktu Bertemu"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginRight="@dimen/core_dimen_size_24dp"
+                              android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                                  android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="mm / dd / yyyyy"
+                                  android:layout_marginRight="@dimen/core_dimen_size_4dp"
+                                  android:textColor="@color/colorGreyTitle"
+                                  android:id="@+id/datePicker"/>
+
+                        <ImageView android:layout_width="@dimen/core_dimen_size_24dp"
+                                   android:layout_height="@dimen/core_dimen_size_24dp"
+                                   android:src="@drawable/ic_date_range"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_marginTop="@dimen/core_dimen_size_2dp"
+                          android:background="@color/colorGreyTitle"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="12:30"
+                                  android:layout_marginRight="@dimen/core_dimen_size_4dp"
+                                  android:textColor="@color/colorGreyTitle"
+                                  android:id="@+id/timePicker"/>
+
+                        <ImageView android:layout_width="@dimen/core_dimen_size_24dp"
+                                   android:layout_height="@dimen/core_dimen_size_24dp"
+                                   android:src="@drawable/ic_access_time"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:layout_marginTop="@dimen/core_dimen_size_2dp"
+                          android:background="@color/colorGreyTitle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_4dp"
+                      android:text="Lokasi"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Pilih Lokasi"
+                              android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                              android:layout_marginRight="@dimen/core_dimen_size_4dp"
+                              android:textColor="@color/colorGreyTitle"
+                              android:id="@+id/locationPicker"/>
+
+                    <ImageView android:layout_width="@dimen/core_dimen_size_24dp"
+                               android:layout_height="@dimen/core_dimen_size_24dp"
+                               android:src="@drawable/ic_location_on"/>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_marginRight="@dimen/core_dimen_size_18dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_18dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_2dp"
+                      android:background="@color/colorGreyTitle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:id="@+id/buttonLayout"
+                      android:background="@color/colorWhite"
+                      android:layout_height="wrap_content">
+
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnPilih"
+                    android:layout_below="@+id/llReview"
+                    android:text="Lanjutkan"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                    android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                    android:layout_marginTop="@dimen/core_dimen_size_30dp"
+                    android:layout_marginBottom="@dimen/core_dimen_size_12dp"
+                    android:background="@drawable/btn_blu"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

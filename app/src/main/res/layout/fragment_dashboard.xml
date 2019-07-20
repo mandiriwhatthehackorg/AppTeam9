@@ -47,6 +47,7 @@
                     app:cardCornerRadius="@dimen/core_dimen_size_8dp">
 
                 <RelativeLayout android:layout_width="match_parent"
+                                android:id="@+id/filter"
                                 android:layout_height="match_parent">
 
                     <ImageView
@@ -83,6 +84,10 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
+        <ProgressBar android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/progressBar"
+                     android:layout_gravity="center"/>
         <TextView
                 android:id="@+id/tvChooseProduct"
                 android:layout_width="wrap_content"

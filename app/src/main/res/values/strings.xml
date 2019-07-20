@@ -10,4 +10,47 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="payment_list">
+        <item>Pilih Metode Pembayaran Anda</item>
+        <item>Cash</item>
+        <item>Kredit</item>
+    </string-array>
+
+    <string-array name="bank_list">
+        <item>Pilih Bank</item>
+        <item>Mandiri</item>
+    </string-array>
+
+
+    <string-array name="kredit_list">
+        <item>Pilih Simulasi Kredit</item>
+        <item>DP Murah</item>
+        <item>0 - 6 Persen</item>
+        <item>Bunga Ringan</item>
+    </string-array>
+
+    <string-array name="asuransi_list">
+        <item>Pilih Asuransi</item>
+        <item>Koferhensif</item>
+        <item>TOL</item>
+        <item>Kombinasi</item>
+    </string-array>
+
+    <string-array name="brand_list">
+        <item>Pilih Merek Mobil</item>
+    </string-array>
+
+    <string-array name="model_list">
+        <item>Pilih Merek Mobil</item>
+    </string-array>
+
+    <string-array name="varian_list">
+        <item>Pilih Merek Mobil</item>
+    </string-array>
+
+    <string-array name="type_list">
+        <item>Pilih Merek Mobil</item>
+    </string-array>
+
 </resources>

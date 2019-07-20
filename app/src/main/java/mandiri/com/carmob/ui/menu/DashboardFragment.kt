@@ -1,6 +1,7 @@
 package mandiri.com.carmob.ui.menu
 
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,6 +18,7 @@ import mandiri.com.carmob.model.CarListResponse
 import mandiri.com.carmob.network.CarMobService
 import mandiri.com.carmob.ui.car.list.CarFavoriteListAdapter
 import mandiri.com.carmob.ui.car.list.CarListAdapter
+import mandiri.com.carmob.ui.filter.FilterActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -63,12 +65,13 @@ class DashboardFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         carMobService.getCarList().enqueue (object : Callback<CarListResponse> {
-
             override fun onFailure(call: Call<CarListResponse>, t: Throwable) {
+                progressBar.visibility = View.GONE
                 Toast.makeText(getContext(), t.message, Toast.LENGTH_SHORT).show()
             }
 
             override fun onResponse(call: Call<CarListResponse>, response: Response<CarListResponse>) {
+                progressBar.visibility = View.GONE
                 response?.body()?.result?.cars?.get(0)?.mutableList?.let {
                     carListAdapter.setData(it)
                     carListFavoriteListAdapter.setData(it)

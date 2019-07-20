@@ -1,14 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+             android:orientation="vertical" android:fillViewport="true"
              tools:context=".ui.menu.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F4F4F4"
+                  android:orientation="vertical">
 
-</FrameLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/colorBlue">
+
+            <ImageView android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:id="@+id/profileImage"
+                       android:src="@drawable/profile"
+                       android:layout_centerInParent="true"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/profileImage"
+                      android:textStyle="bold"
+                      android:textColor="@color/colorWhite"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Samuel Ningrat"/>
+
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorWhite"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Email"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Ganti Password"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorWhite"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Informasi Kredit"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorWhite"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Bahasa"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Bantuan"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Saran"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/colorWhite"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#000000"
+                      android:layout_marginLeft="@dimen/core_dimen_size_30dp"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginBottom="@dimen/core_dimen_size_8dp"
+                      android:layout_centerHorizontal="true"
+                      android:text="Keluar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

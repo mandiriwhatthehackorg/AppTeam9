@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_order.*
 
 import mandiri.com.carmob.R
 
@@ -28,5 +29,10 @@ class OrderFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_order, container, false)
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
 
+        rbCarRating.rating = 4.0f
+        rbCarRating2.rating = 3.0f
+    }
 }

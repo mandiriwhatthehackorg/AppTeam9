@@ -22,7 +22,7 @@
             <View
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:background="@color/colorPrimary" />
+                    android:background="@color/colorBlue" />
 
             <ImageView
                     android:id="@+id/ivLogoBlukendi"
@@ -156,17 +156,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
-            <TextView
-                    android:id="@+id/tvRegister"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/cardRegister"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="@dimen/core_dimen_size_24dp"
-                    android:text="@string/label_no_account"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/core_font_size_12sp" />
 
         </RelativeLayout>
 

@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_engine.*
 
 import mandiri.com.carmob.R
+import mandiri.com.carmob.ui.car.detail.BottomSheetDialog
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,5 +34,9 @@ class EngineFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        btnPilih.setOnClickListener {
+            val bottomSheetFragment = BottomSheetDialog()
+            bottomSheetFragment.show(childFragmentManager, bottomSheetFragment.tag)
+        }
     }
 }
