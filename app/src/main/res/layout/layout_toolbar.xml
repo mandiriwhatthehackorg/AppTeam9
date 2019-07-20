@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="?actionBarSize"
+                                   android:background="@color/colorBlue"
+                                   android:minHeight="?attr/actionBarSize"
+                                   app:layout_scrollFlags="enterAlways"
+                                   app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                                   app:titleTextColor="@color/colorWhite">
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/ivToolbarBack"
+                android:layout_width="@dimen/core_dimen_size_24dp"
+                android:layout_height="@dimen/core_dimen_size_24dp"
+                android:layout_margin="@dimen/core_dimen_size_12dp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_up_back"
+                tools:ignore="ContentDescription" />
+
+        <TextView
+                android:id="@+id/tvToolbarInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/ivToolbarBack"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/core_font_size_16sp"
+                tools:text="TITLE"
+                tools:textColor="@android:color/white"/>
+
+        <ImageView
+                android:id="@+id/ivFavorite"
+                android:layout_width="@dimen/core_dimen_size_24dp"
+                android:layout_height="@dimen/core_dimen_size_24dp"
+                android:layout_margin="@dimen/core_dimen_size_12dp"
+                android:layout_marginEnd="@dimen/core_dimen_size_10dp"
+                android:tint="@color/colorWhite"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_favorite_border_white"
+                tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

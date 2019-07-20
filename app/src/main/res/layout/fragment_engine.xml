@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              tools:context=".ui.car.detail.fragment.EngineFragment">
+
+    <View android:layout_width="match_parent"
+          android:layout_height="3dp"
+          android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+          android:layout_marginRight="@dimen/core_dimen_size_16dp"
+          android:layout_marginTop="@dimen/core_dimen_size_8dp"
+          android:background="@color/colorGrey"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Tipe"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Kapasitas"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Rasio Kompresi"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Power Max"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Torsi Max"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Bahan Bakar"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Kecepatan Max"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Akselerasi"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                  android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:text="Transmisi"/>
+
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Tipe"/>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/core_dimen_size_24dp"
+              android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+              android:layout_marginRight="@dimen/core_dimen_size_16dp"
+              android:text="Review Pelanggan"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="@dimen/core_dimen_size_8dp"
+                android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                android:layout_marginRight="@dimen/core_dimen_size_16dp">
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@color/colorGrey"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+                android:id="@+id/llReview"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/core_dimen_size_12dp"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/cvUserImage"
+                  android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:text="Review"/>
+
+            <RatingBar
+                android:id="@+id/rbCarRating"
+                style = "?android:attr/ratingBarStyleSmall"
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="4"
+                tools:text="lorem"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="05 Jul 2019, 10.10 Wib"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Mobilnya sesuai dan masih bersih, pengiriman baik"/>
+
+        </LinearLayout>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPilih"
+                android:layout_below="@+id/llReview"
+                android:text="Pilih"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="@dimen/core_dimen_size_16dp"
+                android:layout_marginLeft="@dimen/core_dimen_size_16dp"
+                android:layout_marginTop="@dimen/core_dimen_size_12dp"
+                android:background="@drawable/btn_blu"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Car-Mob</string>
+    <string name="label_no_account">Belum Punya Akun? %1$s</string>
+    <string name="text_forget_password">Lupa kata sandi?</string>
+    <string name="button_login_enter">Masuk</string>
+    <string name="label_login_greeting_1">Hai, apa kabar?</string>
+    <string name="label_login_greeting_2">Ayo awali harimu penuh semangat!</string>
+    <string name="hint_login_username">Username atau Nomor HP</string>
+    <string name="hint_login_password">Kata Sandi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

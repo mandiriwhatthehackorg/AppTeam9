@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="300dp"
+                                   android:layout_marginStart="@dimen/core_dimen_size_6dp"
+                                   android:layout_marginEnd="@dimen/core_dimen_size_6dp"
+                                   android:layout_marginBottom="@dimen/core_dimen_size_16dp"
+                                   android:orientation="vertical"
+                                   app:cardCornerRadius="@dimen/core_dimen_size_8dp"
+                                   app:cardElevation="@dimen/core_dimen_size_8dp"
+                                   app:cardPreventCornerOverlap="false"
+                                   app:cardUseCompatPadding="false">
+
+    <LinearLayout
+            android:id="@+id/llItemNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/core_dimen_size_6dp"
+            android:orientation="vertical">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/core_dimen_size_6dp">
+
+            <TextView android:id="@+id/tvCarName"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                      android:layout_marginLeft="@dimen/core_dimen_size_8dp"
+                      tools:text="Mercedes AMG GT"/>
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginTop="@dimen/core_dimen_size_8dp"
+                       android:layout_marginEnd="@dimen/core_dimen_size_8dp"
+                       android:src="@drawable/ic_favorite_border"/>
+
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/ivCarImage"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:scaleType="centerInside"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/core_dimen_size_6dp"
+                android:layout_marginStart="@dimen/core_dimen_size_6dp"
+                android:paddingLeft="@dimen/core_dimen_size_16dp"
+                android:paddingRight="@dimen/core_dimen_size_16dp"
+                android:layout_marginEnd="9dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/core_dimen_size_12dp"
+                    android:orientation="vertical">
+
+                <TextView android:id="@+id/tvCarPrice"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorBlue"
+                          android:textStyle="bold"
+                          tools:text="Rp.5,1 M"/>
+
+                <RatingBar
+                        android:id="@+id/tvCarRating"
+                        style = "?android:attr/ratingBarStyleSmall"
+                        android:theme="@style/RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="4"
+                        tools:text="lorem"/>
+
+                <TextView android:id="@+id/tvDealerName"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="@dimen/core_font_size_12sp"
+                          tools:text="Totok Dealer"/>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/ivShareNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/roundcorner"
+                    android:contentDescription="@string/app_name"
+                    android:text="BELI"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/core_dimen_size_12dp"
+                    android:textColor="@color/colorWhite"
+                    android:padding="3dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
